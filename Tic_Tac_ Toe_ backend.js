@@ -10,9 +10,11 @@ let n=0;
 const winpattern = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
 
 cards.forEach ((box)=> {
-    box.addEventListener("click", () =>{
+    box.addEventListener("click", (event) =>{
         console.log("You have clicked the card");
         if(turnO){
+        // event.target.innerText="X";
+        //console.log(event);
         box.innerText="O";
         turnO=false;
         n++;

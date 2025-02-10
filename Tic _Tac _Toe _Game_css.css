@@ -60,3 +60,68 @@ body {
 .hide {
     display: none;
 }
+
+
+/* Confetti animation */
+
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #f3cf03; /* Gold color for confetti */
+    opacity: 0;
+    animation: confetti-fall 3s infinite ease-in;
+}
+
+@keyframes confetti-fall {
+    0% {
+        opacity: 1;
+        transform: translateY(-100vh) rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
+
+/* Randomize confetti positions and delays */
+.confetti:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+.confetti:nth-child(2) {
+    left: 20%;
+    animation-delay: 1s;
+}
+.confetti:nth-child(3) {
+    left: 30%;
+    animation-delay: 2s;
+}
+.confetti:nth-child(4) {
+    left: 40%;
+    animation-delay: 3s;
+}
+.confetti:nth-child(5) {
+    left: 50%;
+    animation-delay: 4s;
+}
+.confetti:nth-child(6) {
+    left: 60%;
+    animation-delay: 0.5s;
+}
+.confetti:nth-child(7) {
+    left: 70%;
+    animation-delay: 1.5s;
+}
+.confetti:nth-child(8) {
+    left: 80%;
+    animation-delay: 2.5s;
+}
+.confetti:nth-child(9) {
+    left: 90%;
+    animation-delay: 3.5s;
+}
+.confetti:nth-child(10) {
+    left: 100%;
+    animation-delay: 4.5s;
+}

@@ -3,16 +3,15 @@ let reset = document.querySelectorAll("#reset");
 let wdiv = document.querySelector(".hide");
 let mesg = document.querySelector("#mesg");
 let newgame = document.querySelector("#reset");
+let decor = document.querySelectorAll(".confetti");
 
 let turnO = true;
 let n=0;
 const winpattern = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
 
 cards.forEach ((box)=> {
-    box.addEventListener("click", (event) =>{
+    box.addEventListener("click", () =>{
         console.log("You have clicked the card");
-        // event.target.innerText="X";
-        //console.log(event);
         if(turnO){
         box.innerText="O";
         turnO=false;
@@ -24,7 +23,7 @@ cards.forEach ((box)=> {
         }
         box.disabled =true;
         checkWinner();
-        checkCondition();
+       
     });
 });
 
@@ -63,18 +62,21 @@ const checkWinner = ()=> {
             console.log(pattern1," is winner");
             disableAll();
             showWinner(pattern1);
+        } else {
+            checkCondition(pattern1,pattern2,pattern3);
         }
         }
     }
 
 }
 
-const checkCondition = ()=> {
-    if(n===9){
-        mesg.innerText=`Game was a Draw`;
-        newgame.innerText="Play Again"
-        wdiv.classList.remove("hide");
+const checkCondition = (pattern1,pattern2,pattern3)=> {
 
+    if(n===9 && pattern1!==pattern2 && pattern2!==pattern3 ){
+        mesg.innerText=`Game was a Draw`;
+        newgame.innerText="Play Again";
+        wdiv.classList.remove("hide");
+        decor.forEach(node => node.remove());  // Removes each element
     }
 }
 

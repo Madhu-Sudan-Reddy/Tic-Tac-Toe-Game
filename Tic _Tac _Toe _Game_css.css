@@ -125,3 +125,88 @@ body {
     left: 100%;
     animation-delay: 4.5s;
 }
+
+.hideclass {
+    visibility: hidden;
+}
+
+#row1 {
+    width: 53vmin;
+    background-color: red;
+    position: absolute;
+    margin-top: 9vmin;
+    height: 10px;
+    border-radius: 10px;
+    /* visibility: hidden; */
+}
+
+#row2 {
+    width: 53vmin;
+    background-color: red;
+    position: absolute;
+    margin-top: 28vmin;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#row3 {
+    width: 53vmin;
+    background-color: red;
+    position: absolute;
+    margin-top: 48vmin;
+    height: 10px;
+    border-radius: 10px;
+}
+
+#column1 {
+    width: 53vmin;
+    background-color: red;
+    position: absolute;
+    margin-top: 29vmin;
+    height: 10px;
+    rotate: 90deg;
+    left: 54vmin;
+    border-radius: 10px;
+}
+
+#column2 {
+    width: 53vmin;
+    background-color: red;
+    position: absolute;
+    margin-top: 29vmin;
+    height: 10px;
+    rotate: 90deg;
+    border-radius: 10px;
+}
+
+#column3 {
+    width: 53vmin;
+    background-color: red;
+    position: absolute;
+    margin-top: 29vmin;
+    height: 10px;
+    rotate: 90deg;
+    right: 54vmin;
+    border-radius: 10px;
+}
+
+
+#diagnoal1 {
+    width: 65vmin;
+    background-color: red;
+    position: absolute;
+    margin-top: 29vmin;
+    height: 10px;
+    rotate: 45deg;
+    border-radius: 10px;
+}
+
+#diagnoal2 {
+    width: 65vmin;
+    background-color: red;
+    position: absolute;
+    margin-top: 29vmin;
+    height: 10px;
+    rotate: -45deg;
+    border-radius: 10px;
+}

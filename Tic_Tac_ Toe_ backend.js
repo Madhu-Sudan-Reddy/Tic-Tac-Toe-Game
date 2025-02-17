@@ -111,11 +111,11 @@ const winline = (pattern0, pattern1, pattern2) => {
     } else if (pattern0 === 6 && pattern1 === 7 && pattern2 === 8) {
         row3.classList.remove("hideclass"); // Bottom row
     } else if (pattern0 === 0 && pattern1 === 3 && pattern2 === 6) {
-        column3.classList.remove("hideclass"); // Left column
+        column1.classList.remove("hideclass"); // Left column
     } else if (pattern0 === 1 && pattern1 === 4 && pattern2 === 7) {
         column2.classList.remove("hideclass"); // Middle column
     } else if (pattern0 === 2 && pattern1 === 5 && pattern2 === 8) {
-        column1.classList.remove("hideclass"); // Right column
+        column3.classList.remove("hideclass"); // Right column
     } else if (pattern0 === 0 && pattern1 === 4 && pattern2 === 8) {
         diagnoal1.classList.remove("hideclass"); // Diagonal top-left to bottom-right
     } else if (pattern0 === 2 && pattern1 === 4 && pattern2 === 6) {
